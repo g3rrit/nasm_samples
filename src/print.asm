@@ -12,7 +12,11 @@ print.start:
             call    printf   
             ret
 
+print.eax:
+
 section .data
+
+str_print_rax:      db "rax: %#8x", 10, 0
 
 str_print_start:    db "Starting!", 10, 0
 
