@@ -13,6 +13,10 @@ print.start:
             ret
 
 print.eax:
+            mov     rdi, str_print_start
+            xor     rax, rax
+            call    printf
+            ret
 
 section .data
 
